@@ -34,7 +34,7 @@ $(document).on("click", ".city", function (event) {
 
 function showWeatherCard(city) {
 
-    var apiURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=a236c9f5070f6421bfa1ed630e34d5e9"
+    var apiURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=d86f82eb4672cf317372a2f04d1e0383"
 
     $.ajax({
         url: apiURL,
@@ -67,7 +67,7 @@ function showWeatherCard(city) {
 
 function fiveDayForcast(city) {
 
-    var apiURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=a236c9f5070f6421bfa1ed630e34d5e9"
+    var apiURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=d86f82eb4672cf317372a2f04d1e0383"
 
     $.ajax({
         url: apiURL,
@@ -76,7 +76,7 @@ function fiveDayForcast(city) {
 
         for (i = 0; i < 4; i++) {
 
-            var resultDiv = $("<div>")
+            var resultDiv = $("<div class = fiveDay>")
 
             var pOne = $("<h3>").text(city)
 
