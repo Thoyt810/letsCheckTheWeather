@@ -1,11 +1,11 @@
 $("#searchBtn").on("click", function (event) {
-    
+
     $("#searchResults").empty();
     $("#fiveDay").empty();
 
     var searchCity = $(".searchTerm").val();
 
-    var citybtn = $("<button>").text(searchCity)
+    var citybtn = $("<h2>").text(searchCity)
 
     citybtn.addClass("city")
 
